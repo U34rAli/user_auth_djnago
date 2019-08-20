@@ -57,7 +57,7 @@ ROOT_URLCONF = 'learning_users.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR,],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,10 +89,10 @@ DATABASES = {
 
 PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.Argon2PasswordHasher',
-    'django.contrib.auth.hashers.BCryptSHA256PasswrodHasher',
-    'djanog.contrib.auth.hashers.BCryptPasswrodHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    'django.contrib.auth.hashers.BCryptPasswordHasher',
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
-    'djanog.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
 ]
 
 
